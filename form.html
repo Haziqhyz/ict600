@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Borang Permohonan</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+  <header>
+    <nav>
+      <img src="img/uitmlogo3.png" alt="My Photo" class="webphoto">
+      <a href="index.html">Home</a>
+      <a href="MyProfile.html">Profile</a>
+      <a href="form.html">Borang</a>
+    </nav>
+  </header>
+  <main class="form-container">
+    <form id="borangForm">
+      <h4>Borang Permohonan Kemasukan Maklumat Dalam Laman Web Uitm Pahang</h4>
+
+      <h3>Maklumat Pemohon</h3>
+      <h2>Tarikh Mohon:</h2>
+      <input type="date" name="tarikh" required>
+
+      <h2>No Pekerja:</h2>
+      <input type="text" name="nopekerja" required>
+
+      <h2>Nama:</h2>
+      <input type="text" name="nama" required>
+
+      <h2>Jawatan:</h2>
+      <input type="text" name="jawatan" required>
+
+      <h2>Bahagian / Unit:</h2>
+      <input type="text" name="bahagian" required>
+
+      <h2>No Tel:</h2>
+      <input type="text" name="telefon" required>
+
+      <h2>Email:</h2>
+      <input type="email" name="email" required>
+
+      <h3>Jenis Maklumat</h3>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="maklumat" value="Pengumuman"> Pengumuman</label><br>
+        <label><input type="checkbox" name="maklumat" value="Event"> Event</label><br>
+        <label><input type="checkbox" name="maklumat" value="Berita"> Berita</label><br>
+        <label><input type="checkbox" name="maklumat" value="Tambahan Data"> Tambahan Data</label><br>
+        <input type="text" name="lain" placeholder="Lain-lain, nyatakan...">
+      </div>
+
+      <h3>Lokasi Paparan Maklumat</h3>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="lokasi" value="Muka Depan"> Muka Depan</label><br>
+        <label><input type="checkbox" name="lokasi" value="Menu"> Menu</label><br>
+        <input type="text" name="lokasi_lain" placeholder="Lain-lain, nyatakan...">
+      </div>
+
+      <h3>Tandatangan & Cop</h3>
+
+      <h2>Tandatangan:</h2>
+      <input type="text" name="ttangan" required><br>
+
+      <h2>Cop Rasmi:</h2>
+      <input type="text" name="cop" required>
+
+      <h3>Kegunaan Unit Koperat</h3>
+      <h2>Diluluskan Oleh:</h2>
+      <input type="text" name="diluluskan" required><br>
+
+      <h2>Tandatangan:</h2>
+      <input type="text" name="ttangan2" required>
+
+      <h3>Kegunaan Infotech</h3>
+      <h2>Tarikh terima:</h2>
+      <input type="date" name="tterima" required><br>
+
+      <h2>Tarikh siap:</h2>
+      <input type="date" name="tsiap" required>
+
+      <button type="submit">Hantar</button>
+    </form>
+
+    <div id="result" class="result-box"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 UiTM ICT600 Assignment</p>
+  </footer>
+
+  <script src="js/form.js"></script>
+
+</body>
+
+</html>
