@@ -12,10 +12,10 @@ document.getElementById("borangForm").addEventListener("submit", function (e) {
   const email = form.email.value.trim();
   const ttangan = form.ttangan.value.trim();
   const cop = form.cop.value.trim();
-  const diluluskan = form.diluluskan.value.trim();
-  const ttangan2 = form.ttangan2.value.trim();
-  const tterima = form.tterima.value;
-  const tsiap = form.tsiap.value;
+  //const diluluskan = form.diluluskan.value.trim();
+  //const ttangan2 = form.ttangan2.value.trim();
+  //const tterima = form.tterima.value;
+  //const tsiap = form.tsiap.value;
   const maklumatChecked = form.querySelectorAll('input[name="maklumat"]:checked');
   // Validate required fields
   if (!tarikh || !nama || !nopekerja || !jawatan || !bahagian || !telefon || !email) {
@@ -61,10 +61,6 @@ document.getElementById("borangForm").addEventListener("submit", function (e) {
   output += `<li><strong>Lokasi Paparan Maklumat:</strong> ${formData.get("lokasi")}</li>`;
   output += `<li><strong>Tandatangan:</strong> ${formData.get("ttangan")}</li>`;
   output += `<li><strong>Cop:</strong> ${formData.get("cop")}</li>`;
-  output += `<li><strong>Diluluskan oleh:</strong> ${formData.get("diluluskan")}</li>`;
-  output += `<li><strong>Tandatangan:</strong> ${formData.get("ttangan2")}</li>`;
-  output += `<li><strong>Tarikh Terima:</strong> ${formData.get("tterima")}</li>`;
-  output += `<li><strong>Tarikh Siap:</strong> ${formData.get("tsiap")}</li>`;
   
   output += "</ul>";
   document.getElementById("result").innerHTML = output;
